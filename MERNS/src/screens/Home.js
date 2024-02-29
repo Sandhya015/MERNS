@@ -1,18 +1,24 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import Card from '../components/Card'
+import Carousel from '../components/Carousel'
 
-export default function 
+export default function
 
-() {
+  () {
   return (
     <div>
 
-    <div>
-        <Navbar></Navbar>
+      <div><Navbar></Navbar></div>
+      <div className='m-6'><Carousel></Carousel></div>
+      <div className='m-3'>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
         </div>
-        <div>Body</div>   
-        <div><Footer></Footer></div> 
+      <div><Footer></Footer></div>
     </div>
   )
 }
